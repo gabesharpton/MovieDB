@@ -1,26 +1,34 @@
-import React from 'react';
+import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 
-function App() {
+class App extends Component {
+  state = {
+    toggle: true
+  }
+  render(){
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+       <Welcome text="Hi React" />
+        
       </header>
+      <p>Button Testing
+      </p>
+      <button>Show/hide</button>
     </div>
   );
+}
+}
+class Welcome extends Component{
+
+  render(){
+    const {text} = this.props;
+  return(
+    <div>{text}</div>
+  )
+  }
 }
 
 export default App;

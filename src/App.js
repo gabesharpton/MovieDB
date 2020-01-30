@@ -1,34 +1,34 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
+/* eslint-disable no-unused-vars */
+import React from 'react';
+import { BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom';
 import './App.css';
 
-class App extends Component {
-  state = {
-    toggle: true
-  }
-  render(){
-  return (
+import MoviesList from './MoviesList'
+import MovieDetail from './MovieDetail'
+
+
+const App = () => (
+  <Router>
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-       <Welcome text="Hi React" />
+      <Link to="/" >
+        <h1>MovieDB</h1>
         
-      </header>
-      <p>Button Testing
-      </p>
-      <button>Show/hide</button>
-    </div>
-  );
-}
-}
-class Welcome extends Component{
+      </Link>
 
-  render(){
-    const {text} = this.props;
-  return(
-    <div>{text}</div>
-  )
-  }
-}
+
+      </header>
+           <Switch>
+             <Route exact path="/" component={MoviesList} />
+             <Route path="/:id" component={MovieDetail} />
+           </Switch>
+          
+    </div>
+    </Router>
+
+)
+
 
 export default App;
+
+

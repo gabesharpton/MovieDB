@@ -12,7 +12,7 @@ const App = () => (
     <div className="App">
       <header className="App-header">
       <Link to="/" >
-        <h1>MovieDB</h1>
+        <h1>| MovieDB |</h1>
         
       </Link>
 

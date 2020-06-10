@@ -2,7 +2,7 @@
   "name": "moviedb",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://gabesharpton.github.io/MovieDB",
+  "homepage": "https://gabesharpton.github.io/MovieDB/",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
@@ -23,7 +23,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "yarn build",
-      "deploy": "gh-pages -d build"
+      "deploy": "gh-pages -b master -d build"
   },
   "eslintConfig": {
     "extends": "react-app"

@@ -18,7 +18,11 @@
       "sizes": "512x512"
     }
   ],
+<<<<<<< HEAD:manifest.json
   "start_url": "../index.html",
+=======
+  "start_url": ".",
+>>>>>>> parent of c76b45f4... Updates:public/manifest.json
   "display": "standalone",
   "theme_color": "#000000",
   "background_color": "#ffffff"

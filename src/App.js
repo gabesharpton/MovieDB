@@ -5,6 +5,7 @@ import './App.css';
 
 import MoviesList from './MoviesList'
 import MovieDetail from './MovieDetail'
+require('dotenv').config()
 
 
 const App = () => (
